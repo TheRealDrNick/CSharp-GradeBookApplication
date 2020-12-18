@@ -27,7 +27,7 @@ namespace GradeBook.GradeBooks
                 if(studentIndex <= first20Percent)
                 {
                     return 'A';
-                }else if(studentIndex <= first20Percent * 2)
+                }else if(studentIndex <= first20Percent * 2 - 1)
                 {
                     return 'B';
                 }else if(studentIndex <= first20Percent * 3)
@@ -36,6 +36,10 @@ namespace GradeBook.GradeBooks
                 }else if(studentIndex <= first20Percent * 4)
                 {
                     return 'D';
+                }
+                else
+                {
+                    return 'F';
                 }
                 
             }
